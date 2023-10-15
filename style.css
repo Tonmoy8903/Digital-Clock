@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(45deg, #24ff6d, #2f93f1, #ff5e9a);
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.MyWatch{
+    top: 35%;
+    left: 34%;
+    position: fixed;
+    background-color: #1e1e30;
+    padding: 50px;
+    box-shadow: rgba(14, 21, 37, 0.8);
+    border-radius: 10px;
+}
+
+span{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.H{
+    background: -webkit-linear-gradient(100deg, #634dff, #5fd4ff, #ff5e9a, #ffb960);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.M{
+    background: -webkit-linear-gradient(100deg, #634dff, #5fd4ff, #ff5e9a, #ffb960);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.date{
+    background: -webkit-linear-gradient(100deg, #ae4af6, #634dff, #f7b63f, #2f93f1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 480px){
+    .MyWatch{
+        top: 35%;
+        left: 5%;
+        position: fixed;
+        background-color: #1e1e30;
+        padding: 50px;
+        box-shadow: rgba(14, 21, 37, 0.8);
+        border-radius: 15px;
+    }
+
+    span{
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+}
